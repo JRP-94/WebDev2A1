@@ -43,7 +43,7 @@ const CalculateBudgetMax = (budget, buffer) => {
 
 // Calculates the total amount of all expenses as well as the average and subtotal for each category
 // Returns the total amount of all expenses
-const CalculateResult = (cols, rows) => {
+function CalculateResult(cols, rows) {
     let sum = 0;
     for (let c = 1; c <= cols; c++) {
         let subtotal = 0;
@@ -68,7 +68,7 @@ const CalculateResult = (cols, rows) => {
 // Click event handler that is fired when the user clicks on the calculate button and performs
 // all subsequent calculations and renders the results
 // returns void
-const HandleClick = () => {
+function HandleClick() {
     let budgetInput = document.querySelector(BUDGET_INPUT_FIELD_IDENTIFIER);
     let budgetBuffer = document.querySelector(BUDGET_BUFFER_FIELD_IDENTIFIER);
     let budgetSavings = document.querySelector(BUDGET_SAVINGS_FIELD_IDENTIFIER);
