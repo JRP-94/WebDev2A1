@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="./scripts.js"></script>
+  <title>Holiday Budget Calculator</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Holiday Budget Calculator</h1>
+  </header>
+  <div class="calculator">
+  <div class="budget-info">
+    <h2>Budget Details</h2>
+    <div class="budget-info-input-container">
+      <div class="input-field-container">
+        <label class="input-label" for="budget">Holiday Budget</label>
+        <input class="input-field input-field-budget" name="budget" type="text" />
+      </div>
+      <div class="input-field-container">
+        <label class="input-label" for="buffer">Budget Buffer</label>
+        <input class="input-field input-field-buffer" name="buffer" type="text" />
+      </div>
+      <div class="input-field-container">
+        <label class="input-label" for="savings">Initial Savings</label>
+        <input class="input-field input-field-savings" name="savings" type="text" />
+      </div>
+    </div>
+  </div>
+  <div class="input-container">
+    <div class="col-1 input-col">
+      <h2>Pre-Departure</h2>
+      <div class="input-field-container">
+        <label class="input-label" for="input-1-1">Insurance</label>
+        <input class="input-field input-field-1-1" name="input-1-1" type="text" />
+      </div>
+      <div class="input-field-container">
+        <label class="input-label" for="input-1-2">Visa</label>
+        <input class="input-field input-field-1-2" name="input-1-2" type="text" />
+      </div>
+      <div class="input-field-container border-bottom">
+        <label class="input-label" for="input-1-3">Passport</label>
+        <input class="input-field input-field-1-3" name="input-1-3" type="text" />
+      </div>
+      <div class="input-field-container">
+        <label class="input-label" for="input-1-4">Item Cost Average</label>
+        <input class="input-field input-field-1-4" name="input-1-4" type="text" disabled />
+      </div>
+      <div class="input-field-container">
+        <label class="input-label" for="input-1-5">Subtotal</label>
+        <input class="input-field input-field-1-5" name="input-1-5" type="text" disabled />
+      </div>
+    </div>
+    <div class="col-2 input-col">
+      <h2>Transport</h2>
+      <div class="input-field-container">
+        <label class="input-label" for="input-2-1">Flights</label>
+        <input class="input-field input-field-2-1" name="input-2-1" type="text" />
+      </div>
+      <div class="input-field-container">
+        <label class="input-label" for="input-2-2">Public Transport</label>
+        <input class="input-field input-field-2-2" name="input-2-2" type="text" />
+      </div>
+      <div class="input-field-container">
+        <label class="input-label" for="input-2-3">Taxis</label>
+        <input class="input-field input-field-2-3" name="input-2-3" type="text" />
+      </div>
+      <div class="input-field-container">
+        <label class="input-label" for="input-2-4">Item Cost Average</label>
+        <input class="input-field input-field-2-4" name="input-2-4" type="text" disabled />
+      </div>
+      <div class="input-field-container">
+        <label class="input-label" for="input-2-5">Subtotal</label>
+        <input class="input-field input-field-2-5" name="input-2-5" type="text" disabled />
+      </div>
+    </div>
+    <div class="col-3 input-col">
+      <h2>Food & Hotel</h2>
+      <div class="input-field-container">
+        <label class="input-label" for="input-3-1">Hotel</label>
+        <input class="input-field input-field-3-1" name="input-3-1" type="text" />
+      </div>
+      <div class="input-field-container">
+        <label class="input-label" for="input-3-2">Lunch</label>
+        <input class="input-field input-field-3-2" name="input-3-2" type="text" />
+      </div>
+      <div class="input-field-container">
+        <label class="input-label" for="input-3-3">Dinner</label>
+        <input class="input-field input-field-3-3" name="input-3-3" type="text" />
+      </div>
+      <div class="input-field-container">
+        <label class="input-label" for="input-3-4">Item Cost Average</label>
+        <input class="input-field input-field-3-4" name="input-3-4" type="text" disabled />
+      </div>
+      <div class="input-field-container">
+        <label class="input-label" for="input-3-5">Subtotal</label>
+        <input class="input-field input-field-3-5" name="input-3-5" type="text" disabled />
+      </div>
+    </div>
+    <div class="col-3 input-col">
+      <h2>Entertainment</h2>
+      <div class="input-field-container">
+        <label class="input-label" for="input-4-1">Sightseeing</label>
+        <input class="input-field input-field-4-1" name="input-4-1" type="text" />
+      </div>
+      <div class="input-field-container">
+        <label class="input-label" for="input-4-2">Shopping</label>
+        <input class="input-field input-field-4-2" name="input-4-2" type="text" />
+      </div>
+      <div class="input-field-container">
+        <label class="input-label" for="input-4-3">Drinks</label>
+        <input class="input-field input-field-4-3" name="input-4-3" type="text" />
+      </div>
+      <div class="input-field-container">
+        <label class="input-label" for="input-4-4">Item Cost Average</label>
+        <input class="input-field input-field-4-4" name="input-4-4" type="text" disabled />
+      </div>
+      <div class="input-field-container">
+        <label class="input-label" for="input-4-5">Subtotal</label>
+        <input class="input-field input-field-4-5" name="input-4-5" type="text" disabled />
+      </div>
+    </div>
+  </div>
+  <div class="results-container">
+    <button class="cal-btn " onclick="HandleClick()">Calculate</button>
+    <div class="result-image"></div>
+    <div class="results-fields-container">
+      <div class="input-field-container">
+        <label class="budget-max input-label" for="budget-max">Budget Max</label>
+        <input class="budget-max-field input-field" name="budget-max" type="text" disabled />
+      </div>
+      <div class="input-field-container">
+        <label class="outstanding input-label" for="outstanding">Outstanding Balance</label>
+        <input class="outstanding-field input-field" name="outstanding" type="text" disabled />
+      </div>
+      <div class="input-field-container">
+        <label class="total input-label" for="total">Total</label>
+        <input class="total-field input-field" name="total" type="text" disabled />
+      </div>
+      <div class="input-field-container">
+        <label class="result input-label" for="result">Net Total</label>
+        <input class="result-field input-field" name="result" type="text" disabled />
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</body>
+
+</html>
